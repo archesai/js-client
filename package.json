@@ -1,6 +1,6 @@
 {
   "name": "arches",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Arches AI Javascript Client",
   "main": "dist/index.js",
   "scripts": {

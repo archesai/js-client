@@ -38,8 +38,44 @@ Embed our AI-powered tools on your website effortlessly. Offer cutting-edge solu
 ### Installation and Setup
 
 1. Head over to [Arches AI](http://platform.archesai.com) and log in to your account.
-2. Navigate to the 'Dashboard' and choose the tool you want to set up.
+2. Navigate to the 'Admin' page and create an API token.
 3. Follow the on-screen instructions, and you're good to go!
+
+## Usage
+
+```javascript
+import { ArchesClient } from "arches";
+
+(async () => {
+  // Create client with token
+  const client = new ArchesClient({ TOKEN: "<API_TOKEN>" });
+
+  // Get user
+  const user = await client.user.findOne();
+
+  // List all documents
+  const documents = await client.documents.findAll({
+    orgname: user.defaultOrgname,
+  });
+
+  // List all agents
+  const agents = await client.agents.findAll({ orgname: user.defaultOrgname });
+
+  // List all threads
+  const threads = await client.threads.findAll({
+    orgname: user.defaultOrgname,
+    agentId: agents.results[0].id,
+  });
+
+  // Create message
+  const message = await client.messages.create({
+    orgname: user.defaultOrgname,
+    agentId: agents[0].id,
+    threadId: threads.results[0].id,
+    requestBody: { question: "What is this document about?" },
+  });
+})();
+```
 
 ## Documentation 📚
 
