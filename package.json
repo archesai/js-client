@@ -1,0 +1,31 @@
+{
+  "name": "arches",
+  "version": "1.0.10",
+  "description": "Arches AI Javascript Client",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npx ts-node test/index.ts",
+    "gen": "npx ts-node generate.ts && npx tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "openapi-typescript-codegen": "^0.25.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "@types/axios": "^0.14.0",
+    "axios": "^1.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archesai/js-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/archesai/js-sdk/issues"
+  },
+  "homepage": "https://github.com/archesai/js-sdk#readme",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts"
+}

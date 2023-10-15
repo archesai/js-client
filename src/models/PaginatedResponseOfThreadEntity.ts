@@ -1,0 +1,14 @@
+/* generated using openapi-typescript-codegen -- do no edit */
+/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { _PaginatedDto } from './_PaginatedDto';
+import type { ThreadAggregates } from './ThreadAggregates';
+import type { ThreadEntity } from './ThreadEntity';
+
+export type PaginatedResponseOfThreadEntity = (_PaginatedDto & {
+    results?: Array<ThreadEntity>;
+    aggregates?: ThreadAggregates;
+});
+
