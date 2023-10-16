@@ -37,7 +37,7 @@ export type TokenEntity = {
     /**
      * The domains that can access this token
      */
-    domains: string;
+    domains?: string;
     /**
      * The agents this token has access to
      */

@@ -23,7 +23,7 @@ export type CreateAgentDto = {
     /**
      * The ids of the documents this agent will have access to. If empty, the agent will have access to all documents.
      */
-    documentIds: Array<string>;
+    documentIds?: Array<string>;
 };
 
 export namespace CreateAgentDto {

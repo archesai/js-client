@@ -15,6 +15,6 @@ export type CreateThreadDto = {
     /**
      * The ids of the documents this thread will use in generating responses. The documents must be available for the current agent. If empty, the thread will use all documents available to the agent.
      */
-    documentIds: Array<string>;
+    documentIds?: Array<string>;
 };
 

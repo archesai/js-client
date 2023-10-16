@@ -14,13 +14,13 @@ export type CreateDocumentDto = {
      */
     chunkSize?: number;
     /**
-     * The visibility status of the document
-     */
-    visibility: CreateDocumentDto.visibility;
-    /**
      * The delimiter used to separate the document into text segments. If left blank, only chunkSize will be used.
      */
     delimiter?: string;
+    /**
+     * The visibility status of the document
+     */
+    visibility?: CreateDocumentDto.visibility;
 };
 
 export namespace CreateDocumentDto {

@@ -56,7 +56,7 @@ export type DocumentEntity = {
     /**
      * The visibility status of the document
      */
-    visibility: DocumentEntity.visibility;
+    visibility?: DocumentEntity.visibility;
     /**
      * The link to a preview image of the document
      */

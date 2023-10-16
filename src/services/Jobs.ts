@@ -13,8 +13,8 @@ export class Jobs {
     constructor(public readonly httpRequest: BaseHttpRequest) {}
 
     /**
-     * Get all tools
-     * Get all tools. ADMIN ONLY.
+     * Get all jobs
+     * Get all jobs. ADMIN ONLY.
      * @returns PaginatedResponseOfJobEntity Successfully returned paginated results
      * @throws ApiError
      */
@@ -82,9 +82,9 @@ export class Jobs {
     }
 
     /**
-     * Get a tool
-     * Get a tool. ADMIN ONLY.
-     * @returns JobEntity Successfully retrieved the tool
+     * Get a job
+     * Get a job. ADMIN ONLY.
+     * @returns JobEntity Successfully retrieved the job
      * @throws ApiError
      */
     public findOne({
@@ -110,9 +110,9 @@ export class Jobs {
     }
 
     /**
-     * Delete a tool
-     * Delete a tool. ADMIN ONLY.
-     * @returns any Successfully deleted the tool
+     * Delete a job
+     * Delete a job. ADMIN ONLY.
+     * @returns any Successfully deleted the job
      * @throws ApiError
      */
     public remove({

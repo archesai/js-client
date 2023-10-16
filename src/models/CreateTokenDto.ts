@@ -15,11 +15,11 @@ export type CreateTokenDto = {
     /**
      * The domains that can access this token
      */
-    domains: string;
+    domains?: string;
     /**
      * The ids of the agent this token will have access to. This can not be changed later.
      */
-    agentIds: Array<string>;
+    agentIds?: Array<string>;
 };
 
 export namespace CreateTokenDto {

@@ -11,7 +11,7 @@ export type UpdateDocumentDto = {
     /**
      * The visibility status of the document
      */
-    visibility: UpdateDocumentDto.visibility;
+    visibility?: UpdateDocumentDto.visibility;
 };
 
 export namespace UpdateDocumentDto {

@@ -11,22 +11,22 @@ export type CreateMessageDto = {
     /**
      * The max length of the answer given by the bot
      */
-    answerLength: number;
+    answerLength?: number;
     /**
      * The max length of the context given to the bot
      */
-    contextLength: number;
+    contextLength?: number;
     /**
      * The max number of sources returned included in the context
      */
-    topK: number;
+    topK?: number;
     /**
      * The sililarity cutoff used in this message
      */
-    similarityCutoff: number;
+    similarityCutoff?: number;
     /**
      * The temperature for the LLM
      */
-    temperature: number;
+    temperature?: number;
 };
 
